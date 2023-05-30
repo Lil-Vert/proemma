@@ -74,7 +74,7 @@
 										<div class="blog-entry ftco-animate">
 											<a class="img" style="background-image: url({{printer.picture.url}});"></a>
 											<div class="text pt-2 mt-3">
-												{% if request.user.is_superuser %}
+												{% if request.user.is_staff %}
 												<span class="category mb-3 d-block">
 													<a class="btn btn-outline-success icon-upload" href="{% url 'create-post'%}"></a>
 													<a class="btn btn-outline-info icon-edit" href="{% url 'update-post' printer.slug %}"></a>
@@ -122,7 +122,7 @@
 										<div class="blog-entry ftco-animate">
 											<a class="img" style="background-image: url({{printer.picture.url}});"></a>
 											<div class="text pt-2 mt-3">
-												{% if request.user.is_superuser %}
+												{% if request.user.is_staff %}
 												<span class="category mb-3 d-block">
 													<a class="btn btn-outline-success icon-upload" href="{% url 'create-post' %}"></a>
 													<a class="btn btn-outline-info icon-edit" href="{% url 'update-post' printer.slug %}"></a>

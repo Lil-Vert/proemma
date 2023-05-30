@@ -66,7 +66,7 @@
 								<div class="blog-entry ftco-animate">
 										<a class="img img-2 img-thumbnail" style="background-image: url({{tagpoint.picture.url}});"></a>
 										<div class="text text-2 pt-2 mt-3">
-										  {% if request.user.is_superuser %}
+										  {% if request.user.is_staff %}
 										  <span class="category mb-3 d-block">
 											<a class="btn btn-outline-success icon-upload" href="{% url 'create-post' %}"></a>
 											<a class="btn btn-outline-info icon-edit" href="{% url 'update-post' tagpoint.slug %}"></a>
