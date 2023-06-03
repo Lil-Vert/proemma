@@ -20,7 +20,7 @@ class CustomLoginView(LoginView):
 class RegisterPage(FormView):
     template_name = 'bookApp/signup.html'
     form_class = SingupForm
-    redirect_authentited_user = True
+    redirect_authenticated_user = True
     success_url = reverse_lazy('home')
 
     def form_valid(self, form):
